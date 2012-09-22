@@ -1,0 +1,10 @@
+<%= simple_form_for @registeration do |f| %>
+  <%= f.input :address, label: '주소' %>
+  <%= f.input :name, label: '이름' %>
+  <%= f.input :phone, label: '전화번호' %>
+  <%= f.input :sido, as: :hidden %>
+  <%= f.input :gugun, as: :hidden %>
+  <%= f.input :dong, as: :hidden %>
+  <div class='control-group'><%= check_box_tag :accepted %> 개인 정보 이용 및 수집 동의</div>
+  <%= f.button :submit, value: '확인', :class => 'btn-primary' %>
+<% end %>

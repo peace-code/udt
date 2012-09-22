@@ -1,0 +1,20 @@
+<div class='span12'>
+	<h1>U.D.T <small>우리동네특공대</small></h1>
+
+	<div style='margin: 3em 0em;'>
+
+		<h3 style='margin-bottom: 1em;'><%= @registeration.name %>님!!</h3>
+
+		<h4>우리동네특공대가 되신 것을 환영합니다.</h4>
+
+		<h4>우리동네에 도움이 필요한 경우 문자메시지로 임무가 전달이 됩니다.</h4>
+
+		
+
+		<p style='margin-top: 2em;'>
+			우리동네 특공대 입대사실 알리기
+			<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="'<%=@registeration.address%>' 우리동네 특공대가 되었습니다. 우리동네 문제는 내가 해결한다. #우리동네특공대 ">Tweet</a>
+		</p>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>
